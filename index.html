@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Grupo 35</title>
+		<meta name="description" content="Página do Grupo 35">
+		<meta name="author" content="Tiago Serra, Pedro Pinela e Filipe Silva">
+		<script src="lib/jquery.js"></script>
+		<!-- Esconder as imagens -->
+		<script>
+			$(document).ready(function(){
+				$("#img_pp").hide();
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#img_ts").hide();
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#img_fs").hide();
+			});
+		</script>
+		<!-- Botões 
+		<!-- Botões de Mostrar/Esconder do Pedro Pinela -->
+		<script>
+			$(document).ready(function(){
+				$("#button_hide_pp").click(function(){
+					$("#img_pp").hide();
+				});
+				$("#button_show_pp").click(function(){
+					$("#img_pp").show();
+				});
+			});
+		</script>
+		<!-- Botões de Mostrar/Esconder do Tiago Serra-->
+		<script>
+			$(document).ready(function(){
+				$("#button_hide_ts").click(function(){
+					$("#img_ts").hide();
+				});
+				$("#button_show_ts").click(function(){
+					$("#img_ts").show();
+				});
+			});
+		</script>
+		<!-- Botões de Mostrar/Esconder do Filipe Silva -->
+		<script>
+			$(document).ready(function(){
+				$("#button_hide_fs").click(function(){
+					$("#img_fs").hide();
+				});
+				$("#button_show_fs").click(function(){
+					$("#img_fs").show();
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1>
+			Membros do Grupo
+		</h1>
+		<div>
+			<h2>
+				Pedro Pinela  
+			</h2>
+			<button id="button_show_pp">Mostrar</button>
+			<button id="button_hide_pp">Esconder</button>
+			<p>
+				<img id="img_pp" src="img/pedro_pinela.png" alt="Pedro Pinela">
+			</p>
+			<!-- Colocar o resto sobre o Pinela -->
+			<h2>
+				Tiago Serra
+			</h2>
+			<button id="button_show_ts">Mostrar</button>
+			<button id="button_hide_ts">Esconder</button>
+			<p>
+				<img id="img_ts" src="img/tiago_serra.png" alt="Tiago Serra">
+			</p>
+			<!-- Colocar o resto sobre o Queijadas -->
+			<h2>
+				Filipe Silva
+			</h2>
+			<button id="button_show_fs">Mostrar</button>
+			<button id="button_hide_fs">Esconder</button>
+			<p>
+				<img id="img_fs" src="img/filipe_silva.png" alt="Filipe Silva">
+			</p>
+			<!-- Colocar o resto sobre o Filipe -->
+		</div>
+	</body>
+</html>
