@@ -6,22 +6,21 @@
 		<title>Grupo 35</title>
 		<meta name="description" content="Página do Grupo 35">
 		<meta name="author" content="Tiago Serra, Pedro Pinela e Filipe Silva">
-		<link rel="stylesheet" type="text/css" href="./style/page_style.css">
 		<script src="lib/jquery.js"></script>
 		<!-- Esconder as imagens -->
 		<script>
 			$(document).ready(function(){
-				$("#pp_hide_show").hide();
+				$("#img_pp").hide();
 			});
 		</script>
 		<script>
 			$(document).ready(function(){
-				$("#ts_hide_show").hide();
+				$("#img_ts").hide();
 			});
 		</script>
 		<script>
 			$(document).ready(function(){
-				$("#fs_hide_show").hide();
+				$("#img_fs").hide();
 			});
 		</script>
 		<!-- Botões 
@@ -29,10 +28,10 @@
 		<script>
 			$(document).ready(function(){
 				$("#button_hide_pp").click(function(){
-					$("#pp_hide_show").hide();
+					$("#img_pp").hide();
 				});
 				$("#button_show_pp").click(function(){
-					$("#pp_hide_show").show();
+					$("#img_pp").show();
 				});
 			});
 		</script>
@@ -40,10 +39,10 @@
 		<script>
 			$(document).ready(function(){
 				$("#button_hide_ts").click(function(){
-					$("#ts_hide_show").hide();
+					$("#img_ts").hide();
 				});
 				$("#button_show_ts").click(function(){
-					$("#ts_hide_show").show();
+					$("#img_ts").show();
 				});
 			});
 		</script>
@@ -51,63 +50,47 @@
 		<script>
 			$(document).ready(function(){
 				$("#button_hide_fs").click(function(){
-					$("#fs_hide_show").hide();
+					$("#img_fs").hide();
 				});
 				$("#button_show_fs").click(function(){
-					$("#fs_hide_show").show();
+					$("#img_fs").show();
 				});
 			});
 		</script>
 	</head>
-	<!-- BANANA -->
+	
 	<body>
 		<h1>
 			Membros do Grupo
 		</h1>
-		<div id="div_pp">
+		<div>
 			<h2>
 				Pedro Pinela  
 			</h2>
 			<button id="button_show_pp">Mostrar</button>
 			<button id="button_hide_pp">Esconder</button>
-			<div id="pp_hide_show">
-				<img src="img/pedro_pinela.png" alt="Pedro Pinela">
-				<h3>
-					Número:
-				</h3>
-				64833
-			</div>
-		</div>
-		<div id="div_ts">
+			<p>
+				<img id="img_pp" src="img/pedro_pinela.png" alt="Pedro Pinela">
+			</p>
+			<!-- Colocar o resto sobre o Pinela -->
 			<h2>
 				Tiago Serra
 			</h2>
 			<button id="button_show_ts">Mostrar</button>
 			<button id="button_hide_ts">Esconder</button>
-			<div id="ts_hide_show">
-				<img src="img/tiago_serra.png" alt="Tiago Serra">
-				<h3>
-					Número:
-				</h3>
-				70304
-				<!-- Colocar o resto sobre o Queijadas -->
-			</div>
-		</div>
-		<div id="div_fs">
+			<p>
+				<img id="img_ts" src="img/tiago_serra.png" alt="Tiago Serra">
+			</p>
+			<!-- Colocar o resto sobre o Queijadas -->
 			<h2>
-				
 				Filipe Silva
 			</h2>
 			<button id="button_show_fs">Mostrar</button>
 			<button id="button_hide_fs">Esconder</button>
-			<div id="fs_hide_show">
-				<img src="img/filipe_silva.png" alt="Filipe Silva">
-				<h3>
-					Número:
-				</h3>
-				73513
-				<!-- Colocar o resto sobre o Filipe -->
-			</div>
+			<p>
+				<img id="img_fs" src="img/filipe_silva.png" alt="Filipe Silva">
+			</p>
+			<!-- Colocar o resto sobre o Filipe -->
 		</div>
 	</body>
 </html>
